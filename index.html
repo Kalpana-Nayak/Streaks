@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <h1>The GenZ Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#outfits">OUTFITS</a></li>
+                <li><a href="#payment">PAYMENT</a></li>
+                <li><a href="#streaks">REWARDS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="streaks">
+        <h2>Streaks</h2>
+        <p id="streak-count">Streak: 0 days</p>   
+        <button id="check-in">Increment</button>
+
+        <div id="upload">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="fileUpload">Upload your OOTD!</label>
+            <p>  </p>
+            <input type="file" id="fileUpload" name="fileUpload">
+            <input type="submit" value="Upload File">
+        </form></div>
+
+    </section>
+
+    <main>
+      <section id="outfits">
+                <h2>Choose Your Outfit</h2>
+                <div class="outfit-list">
+
+                    <div class="outfit-item">
+                        <img src="outfit7.jpg" alt="Outfit 3">
+                        <p>Bomber Jacket!</p>
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                        <button>Details</button>
+                    </div>
+                    <div class="outfit-item">
+                        <img src="outfit5.jpg" alt="Outfit 1">
+                        <p>Chic and comfortable</p>
+                        <button>Add to Cart</button>
+                        <button id="purchase-button">Buy Now</button>
+                        <button>Details</button>
+                    </div>
+                    <div class="outfit-item">
+                        <img src="outfit1.jpg" alt="Outfit 2">
+                        <p>Subtle Style</p>
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                        <button>Details</button>
+                    </div>
+                    <div class="outfit-item">
+                        <img src="outfit4.jpg" alt="Outfit 3">
+                        <p>Exudes effortless charm</p>
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                        <button>Details</button>
+                    </div>
+                    <div class="outfit-item">
+                        <img src="outfit8.jpg" alt="Outfit 3">
+                        <p>Sleek Sporting</p>
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                        <button>Details</button>
+                    </div>
+                    <div class="outfit-item">
+                        <img src="outfit11.jpg" alt="Outfit 3">
+                        <p>Mood Party</p>
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                        <button>Details</button></div>
+
+                    <div class="outfit-item">
+                        <img src="outfit10.jpg" alt="Outfit 3">
+                        <p>Summer Daisy</p>
+                        <button>Add to Cart</button>
+                        <button>Buy Now</button>
+                        <button>Details</button></div>
+    
+                <div class="outfit-item">
+                    <img src="outfit13.jpg" alt="Outfit 3">
+                    <p>Old Money Fit</p>
+                    <button>Add to Cart</button>
+                    <button>Buy Now</button>
+                    <button>Details</button></div>   
+            </section>
+    
+            <section id="payment">
+                <h2>Payment Options</h2>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="Credit/Debit Card" name="payment-method" value="Credit/Debit Card">
+                        <label for="Credit/Debit Card">Credit Card</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="UPI" name="payment-method" value="UPI">
+                        <label for="UPI">UPI</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer">Cash On Delivery</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer">Debit Card</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer">Net Banking</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer">Wallet/Coupon</label>
+                    </div>
+                    </section></main>
+
+<div class="footer"> <p>&copy; Team Keyboard Warriors</p></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
